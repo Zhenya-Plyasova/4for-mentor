@@ -120,14 +120,20 @@ color: #000;
     line-height: 1.14;
     letter-spacing: 0.02em;
     display: flex;
+    align-items: center;
 }
 .header-contacts .link {
     color: var(--primary-color)
 }       
 
-.icon-mail {
+.icon-mail,
+.icon-phone {
     fill: currentColor;
+    margin-right: 10px;
 }
+/* .color-contact {
+    fill: red;
+} */
 
 .link:hover,
 .link:focus {
@@ -199,6 +205,20 @@ color: #000;
    margin-right: auto;
 }
 
+.container-icon {
+    background-color: var(--secondary-back-color);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+}
+.advantages-pic {
+    fill: #2196F3;
+}
 
 .visually-hidden {
     position: absolute;
@@ -308,6 +328,69 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     text-align: center;
 }
 
+.icons-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+.container-social {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #afb1b8;
+}
+
+.social-item {
+    margin-right: 10px;
+}
+
+.social-item:last-child {
+    margin-right: 0;
+}
+
+.container-social:hover,
+.container-social:focus {
+    color: var(--back-color);
+    background-color: var(--accent-color);
+}
+
+.social-links {
+    fill: currentColor;
+}
+
+/* clients */
+
+.clients-list {
+    display: flex;
+}
+
+.client-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    color: #afb1b8;
+    margin-right: 30px;
+}
+
+.client-item:last-child {
+    margin-right: 0;
+}
+
+.client-item:hover,
+.client-item:focus {
+color: var(--accent-color);
+}
+.client-pic {
+    fill: currentColor;
+}
+
 /* portfolio */
 .works .works-title {
     color: var(--secondary-color);
@@ -365,6 +448,11 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     margin-top: 4px;
 } 
 
+.item-portfolio:hover,
+.item-portfolio:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .card {
     padding: 20px 24px;
     border-left: 1px solid #EEEEEE;
@@ -408,6 +496,11 @@ padding-bottom: 60px;
     padding-right: 15px;
 }
 
+.footer-blocks {
+display: flex;  
+align-items: baseline;
+}
+
 .contacts-box {
     margin-top: 20px;
 }
@@ -418,4 +511,43 @@ padding-bottom: 60px;
 
 .contacts-item:last-child {
     margin-bottom: 0;
+}
+.icons-footer {
+    display: flex;
+    margin-top: 20px;
+}
+.footer-title {
+    color: var(--back-color);
+}
+.footer-block:last-child{
+    margin-left: 70px;
+}
+
+.footer-social {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: var(--back-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-footer {
+    margin-right: 10px;
+}
+
+.social-item:last-child {
+    margin-right: 0;
+}
+
+.footer-social:hover,
+.footer-social:focus {
+    color: var(--back-color);
+    background-color: var(--accent-color);
+}
+
+.social-links {
+    fill: currentColor;
 }

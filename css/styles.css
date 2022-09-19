@@ -38,7 +38,7 @@ ul{
 }
 
 img {
-    display: block
+    display: block;
 }
 
 /* шапка */
@@ -214,11 +214,10 @@ color: #000;
     background-color: var(--secondary-back-color);
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     border-radius: 4px;
     width: 270px;
     height: 120px;
-    padding: 25px 100px;
     margin-bottom: 30px;
 }
 .advantages-pic {
@@ -372,7 +371,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     display: flex;
 }
 
-.client-item {
+.client-logo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -381,17 +380,28 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     border: 1px solid #afb1b8;
     border-radius: 4px;
     color: #afb1b8;
-    margin-right: 30px;
+    
+}
+
+.client-item {
+margin-right: 30px;
 }
 
 .client-item:last-child {
     margin-right: 0;
 }
 
-.client-item:hover,
-.client-item:focus {
+.client-logo:hover{
 color: var(--accent-color);
+border: 1px solid var(--accent-color);
 }
+
+.client-logo:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    outline: none;
+}
+
 .client-pic {
     fill: currentColor;
 }
@@ -453,9 +463,16 @@ color: var(--accent-color);
     margin-top: 4px;
 } 
 
-.item-portfolio:hover,
-.item-portfolio:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+.portfolio-link{
+text-decoration: none;
+display:inline-block;
+margin-top: 0;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card {
@@ -485,6 +502,12 @@ padding-bottom: 60px;
     line-height: 1.71;
     font-style: normal;    
 }
+
+.footer-links .link:hover,
+.footer-links .link:focus{
+    color: var(--accent-color);
+}
+
 
 .footer-links .contact {
     color: rgba(255, 255, 255, 0.6);
